@@ -29,19 +29,19 @@
 </head>
 <body>
     <!-- HEADER -->
-    <header>
-        <div>
-            <img src="images/favicon.ico" alt="logo">
-            <h1><a href="#">Hyeris's Portfolio</a></h1>
+    <header class="header">
+        <div class="header__logo">
+            <img class="header__logo__img" src="images/favicon.ico" alt="logo">
+            <h1 class="header__logo__title"><a href="#">Hyeris's Portfolio</a></h1>
         </div>
         <nav>
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#mywork">My Work</a></li>
-            <li><a href="#testimonal">Testimonial</a></li>
-            <li><a href="#contact">Contact</a></li>
+          <ul class="header__menu">
+            <li><a class="header__menu__item active" href="#home">Home</a></li>
+            <li><a class="header__menu__item" href="#about">About</a></li>
+            <li><a class="header__menu__item" href="#skills">Skills</a></li>
+            <li><a class="header__menu__item" href="#mywork">My Work</a></li>
+            <li><a class="header__menu__item" href="#testimonal">Testimonial</a></li>
+            <li><a class="header__menu__item" href="#contact">Contact</a></li>
           </ul>
         </nav>
     </header>
@@ -49,237 +49,250 @@
     <main>
         <!-- HOME -->
         <section id="home">
-            <img src="images/profile.png">
-            <h2>Hello I&#39;m Front-end developer, Hyeri</h2>
-            <p>웹/앱 풀스택 개발자입니다. </p>
-            <a href="#contact">Contact Me</a>
+            <img class="home__img" src="images/profile.png">
+            <h2 class="home__title">Hello <br> I&#39;m <strong class="home__title--strong">Front-end developer</strong>, Hyeri</h2>
+            <p class="home__desc"> 웹/앱 풀스택 개발자입니다. </p>
+            <a class="home__contact" href="#contact">Contact Me</a>
+           
         </section>
+
         <!-- About -->
-        <section id="about">
-            <h2>About me</h2>
-            <p>안녕하세요. 프론트엔드 개발자 류혜리입니다. 반응형 웹/앱을 만들고 있습니다. </p>
-            <p>사람들과 어울리며 새로운 도전을 하는 것을 좋아합니다. </p>
-            <ul>
-                <li>
-                    <i class="fa-brands fa-html5"></i>
-                    <p>Front-end</p>
-                    <p>HTML, CSS, Javascript, React </p>
+        <section id="about" class="section max-container">
+            <h2 class="title">About me</h2>
+            <p class="description">안녕하세요. 웹디자인을 좋아하는 프론트엔드 개발자 류혜리입니다. <br />반응형 웹/앱을 만들고 있습니다.
+           사람들과 어울리며 새로운 도전을 하는 것을 좋아합니다. 풀스택 개발자가 되기 위해 노력하고 있습니다.  </p>
+            <ul class="majors">
+                <li class="major">
+                    <i class="fa-brands fa-html5 major__icon"></i>
+                    <p class="major__title">Front-end</p>
+                    <p>HTML, CSS, Javascript, React,HTML, CSS </p>
                 </li>
-                <li>
-                    <i class="fa-solid fa-mobile"></i>
-                    <p>Mobile</p>
+                <li class="major">
+                    <i class="fa-solid fa-mobile major__icon"></i>
+                    <p class="major__title">Mobile</p>
                     <p>React Native</p>
                 </li>
-                <li>
-                    <i class="fa-solid fa-server"></i>
-                    <p>Back-end</p>
+                <li class="major">
+                    <i class="fa-solid fa-server major__icon"></i>
+                    <p class="major__title">Back-end</p>
                     <p>Javascript, NodeJs, Rest APIs, GraphQL</p>
                 </li>
             </ul>
-            <ul>
-                <li>
+            <ul class="careers">
+                <li class="career">
                     <img src="images/jobs/google.png" />
                     <div>
-                        <p>Google as Senior Software Engineer</p>
-                        <p>2019 Oct - Until now</p>
+                        <p class="job__name">Google as Senior Software Engineer</p>
+                        <p class="job__period">2019 Oct - Until now</p>
                     </div>
                 </li>
-                <li>
+                <li class="career">
                     <img src="images/jobs/samsung.png">
                     <div>
-                        <p>Samsung as Software Engineer</p>
-                        <p>2020 Mar - Until now</p>
+                        <p class="job__name">Samsung as Software Engineer</p>
+                        <p class="job__period">2020 Mar - Until now</p>
                     </div>
                 </li>
             </ul>
+            
         </section>
+
         <!-- SKILLS -->
-        <section id="Skills">
-            <h2>My Skills</h2>
-            <h3>Skills & Attributes</h3>
-            <p>주로 책, 유뷰브, 인강을 참고하여 개발 공부를 해왔으며 도움이 된 인강은 노마드코더, 드림코딩입니다. </p>
-            <div>
-                <section>
-                    <h3>Coding skills</h3>
-                    <ul>
-                        <li>
-                            <div>
-                                <span>HTML</span>
-                                <span>98%</span>
-                            </div>
-                            <div>
-                                <div style="width: 98%"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <span>CSS</span>
-                                <span>90%</span>
-                            </div>
-                            <div>
-                                <div style="width: 90%"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <span>Javascript</span>
-                                <span>80%</span>
-                            </div>
-                            <div>
-                                <div style="width: 80%"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <span>TypeScript</span>
-                                <span>80%</span>
-                            </div>
-                            <div>
-                                <div style="width: 80%"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <span>React</span>
-                                <span>80%</span>
-                            </div>
-                            <div>
-                                <div style="width: 80%"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <span>NodeJs</span>
-                                <span>70%</span>
-                            </div>
-                            <div>
-                                <div style="width: 70%"></div>
-                            </div>
-                        </li>
-                    </ul>
-                </section>
-                <div>
-                    <section>
-                        <h3>Tools</h3>
+        <section id="skills" class="section ">
+            <div class="max-container">
+                <h2 class="title"> My Skills</h2>
+                <h3>Skills & Attributes</h3>
+                <p class="description">주로 책, 유뷰브, 인강을 참고하여 개발 공부를 해왔으며 도움이 된 인강은 노마드코더, 드림코딩입니다. </p>
+                <div class="skills">
+                    <section class="skills__coding">
+                        <h3 class="subtitle">Coding skills</h3>
                         <ul>
-                            <li>Visual Studio Code</li>
-                            <li>Android Studio Code</li>
-                            <li>Adobe</li>
+                            <li class="bar">
+                                <div class="bar__metadata">
+                                    <span>HTML</span>
+                                    <span>98%</span>
+                                </div>
+                                <div class="bar__bg">
+                                    <div class="bar__value" style="width: 98%"></div>
+                                </div>
+                            </li>
+                            <li class="bar">
+                                <div class="bar__metadata">
+                                    <span>CSS</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="bar__bg">
+                                    <div class="bar__value" style="width: 90%"></div>
+                                </div>
+                            </li>
+                            <li class="bar">
+                                <div class="bar__metadata">
+                                    <span>Javascript</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="bar__bg">
+                                    <div class="bar__value" style="width: 80%"></div>
+                                </div>
+                            </li>
+                            <li class="bar">
+                                <div class="bar__metadata">
+                                    <span>TypeScript</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="bar__bg">
+                                    <div class="bar__value" style="width: 80%"></div>
+                                </div>
+                            </li>
+                            <li class="bar">
+                                <div class="bar__metadata">
+                                    <span>React</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="bar__bg"> 
+                                    <div class="bar__value" style="width: 80%"></div>
+                                </div>
+                            </li>
+                            <li class="bar">
+                                <div class="bar__metadata">
+                                    <span>NodeJs</span>
+                                    <span>70%</span>
+                                </div>
+                                <div class="bar__bg">
+                                    <div class="bar__value" style="width: 70%"></div>
+                                </div>
+                            </li>
                         </ul>
                     </section>
-                    <section>
-                        <h3>Etc</h3>
-                        <ul>
-                            <li>git</li>
-                            <li>jira</li>
-                            <li>slack</li>
-                        </ul>
+                    <section class="skills__tools">
+                            <h3 class="subtitle">Tools</h3>
+                            <ul>
+                                <li>Visual Studio Code</li>
+                                <li>Android Studio Code</li>
+                                <li>Adobe</li>
+                            </ul>
+                    </section>
+                    <section class="skills__etc">
+                            <h3 class="subtitle">Etc</h3>
+                            <ul>
+                                <li>git</li>
+                                <li>jira</li>
+                                <li>slack</li>
+                            </ul>
                     </section>
                 </div>
             </div>
+           
         </section>
-        <!-- MYWORK -->
-        <section id="mywork">
-            <h2>My Work</h2>
-            <h3>Projects</h3>
-            <ul>
-                <li>
-                    <button>All <span>8</span></button>
-                </li>
-                <li>
-                    <button>Front-end <span>5</span></button>
-                </li>
-                <li>
-                    <button>Back-end<span>2</span></button>
-                </li>
-                <li>
-                    <button>Mobile<span>1</span></button>
-                </li>
-            </ul>
-            <ul>
-                <li><a href="#" target="_blank">
-                    <img src="images/projects/project1.webp" alt="">
-                    <div>
-                        <h3>Project #1</h3>
-                        <p>Clone coding with HTML, CSS</p>
-                    </div>
 
-                </a></li>
-                <li><a href="#" target="_blank">
-                    <img src="images/projects/project2.webp" alt="">
-                    <div>
-                        <h3>Project #1</h3>
-                        <p>Clone coding with HTML, CSS</p>
-                    </div>
-                    
-                </a></li>
-                <li><a href="#" target="_blank">
-                    <img src="images/projects/project3.webp" alt="">
-                    <div>
-                        <h3>Project #1</h3>
-                        <p>Clone coding with HTML, CSS</p>
-                    </div>
-                </a></li>
-                <li><a href="#" target="_blank">
-                    <img src="images/projects/project4.webp" alt="">
-                    <div>
-                        <h3>Project #1</h3>
-                        <p>Clone coding with HTML, CSS</p>
-                    </div>
-                </a></li>
-                <li><a href="#" target="_blank">
-                    <img src="images/projects/project5.webp" alt="">
-                    <div>
-                        <h3>Project #1</h3>
-                        <p>Clone coding with HTML, CSS</p>
-                    </div>
-                </a></li>
-                <li><a href=#" target="_blank">
-                    <img src="images/projects/project6.webp" alt="">
-                    <div>
-                        <h3>Project #1</h3>
-                        <p>Clone coding with HTML, CSS</p>
-                    </div></a></li>
-                <li><a href="#" target="_blank">
-                    <img src="images/projects/project7.webp" alt="">
-                    <div>
-                        <h3>Project #1</h3>
-                        <p>Clone coding with HTML, CSS</p>
-                    </div>
-                </a></li>
-                <li><a href="#" target="_blank">
-                    <img src="images/projects/project8.webp" alt="">
-                    <div>
-                        <h3>Project #1</h3>
-                        <p>Clone coding with HTML, CSS</p>
-                    </div>
-                </a></li>
-            </ul>
+        <!-- MYWORK -->
+        <section id="mywork" class="section">
+            <div class="max-container">
+                <h2 class="title">My Work</h2>
+                <h3 class="description">Projects</h3>
+                <ul class="categories">
+                    <li>
+                        <button class="category category--selected">All <span class="category__count">8</span></button>
+                    </li>
+                    <li>
+                        <button class="category">Front-end <span class="category__count">5</span></button>
+                    </li>
+                    <li>
+                        <button class="category">Back-end<span class="category__count">2</span></button>
+                    </li>
+                    <li>
+                        <button class="category">Mobile<span class="category__count">1</span></button>
+                    </li>
+                </ul>
+                <ul class="projects">
+                    <li class="proejct"><a href="#" target="_blank">
+                        <img src="images/projects/project1.webp" alt="" class="project__image">
+                        <div class="project__metadata">
+                            <h3 class="project__title">Project #1</h3>
+                            <p>Clone coding with HTML, CSS</p>
+                        </div>
+    
+                    </a></li>
+                    <li class="proejct"><a href="#" target="_blank">
+                        <img src="images/projects/project2.webp" alt="" class="project__image">
+                        <div class="project__metadata">
+                            <h3 class="project__title">Project #1</h3>
+                            <p>Clone coding with HTML, CSS</p>
+                        </div>
+                        
+                    </a></li>
+                    <li class="proejct"><a href="#" target="_blank">
+                        <img src="images/projects/project3.webp" alt="" class="project__image">
+                        <div class="project__metadata">
+                            <h3 class="project__title">Project #1</h3>
+                            <p>Clone coding with HTML, CSS</p>
+                        </div>
+                    </a></li>
+                    <li class="proejct"><a href="#" target="_blank">
+                        <img src="images/projects/project4.webp" alt="" class="project__image">
+                        <div class="project__metadata">
+                            <h3 class="project__title">Project #1</h3>
+                            <p>Clone coding with HTML, CSS</p>
+                        </div>
+                    </a></li>
+                    <li class="proejct"><a href="#" target="_blank">
+                        <img src="images/projects/project5.webp" alt="" class="project__image">
+                        <div class="project__metadata">
+                            <h3 class="project__title">Project #1</h3>
+                            <p>Clone coding with HTML, CSS</p>
+                        </div>
+                    </a></li>
+                    <li class="proejct"><a href=#" target="_blank">
+                        <img src="images/projects/project6.webp" alt="" class="project__image">
+                        <div class="project__metadata">
+                            <h3 class="project__title">Project #1</h3>
+                            <p>Clone coding with HTML, CSS</p>
+                        </div></a></li>
+                    <li class="proejct"><a href="#" target="_blank">
+                        <img src="images/projects/project7.webp" alt="" class="project__image">
+                        <div class="project__metadata">
+                            <h3 class="project__title">Project #1</h3>
+                            <p>Clone coding with HTML, CSS</p>
+                        </div>
+                    </a></li>
+                    <li class="proejct"><a href="#" target="_blank">
+                        <img src="images/projects/project8.webp" alt="" class="project__image">
+                        <div class="project__metadata">
+                            <h3 class="project__title">Project #1</h3>
+                            <p>Clone coding with HTML, CSS</p>
+                        </div>
+                    </a></li>
+                </ul>
+            </div>
+           
         </section>
+
         <!-- TESTIMONIAL -->
-        <section id="testimonial">
-            <h2>Testimonials</h2>
-            <p>See what they say about me</p>
-            <ul>
-                <li>
-                    <img src="images/testimonials/people1.webp" alt="">
-                    <div>
-                        <p>description</p>
-                        <p><a href="#">James Kim</a> /Google</p>
+        <section id="testimonial" class="section max-container">
+            <h2 class="title">Testimonials</h2>
+            <h3>See what they say about me</h3>
+            <ul class="testimonials">
+                <li class="testimonial">
+                    <img src="images/testimonials/people1.webp" alt="" class="testimonial__image">
+                    <div class="testimonial__bubble">
+                        <p>안녕하세요. 웹디자인을 좋아하는 프론트엔드 개발자 류혜리입니다. 반응형 웹/앱을 만들고 있습니다.
+                            사람들과 어울리며 새로운 도전을 하는 것을 좋아합니다. 풀스택 개발자가 되기 위해 노력하고 있다.</p>
+                        <p><a href="#" class="testimonial__bubble__name">James Kim</a> /Google</p>
                     </div>
                 </li>
-                <li>
-                    <img src="images/testimonials/people2.webp" alt="">
-                    <div>
-                        <p>description</p>
-                        <p><a href="#">James Kim</a> /Google</p>
+                <li class="testimonial">
+                    <img src="images/testimonials/people2.webp" alt="" class="testimonial__image">
+                    <div class="testimonial__bubble">
+                        <p>안녕하세요. 웹디자인을 좋아하는 프론트엔드 개발자 류혜리입니다.웹디자인을 좋아하는 프론트엔드 개발자 류혜리입니다 반응형 웹/앱을 만들고 있습니다.
+                            사람들과 어울리며 새로운 도전을 하는 것을 좋아합니다. 풀스택 개발자가 되기 위해 노력하고 있습니다. </p>
+                        <p><a href="#" class="testimonial__bubble__name">James Kim</a> /Samsung</p>
                     </div>
                 </li>
-                <li>
-                    <img src="images/testimonials/people3.webp" alt="">
-                    <div>
-                        <p>description</p>
-                        <p><a href="#">James Kim</a> /Google</p>
+                <li class="testimonial">
+                    <img src="images/testimonials/people3.webp" alt="" class="testimonial__image">
+                    <div class="testimonial__bubble">
+                        <p>안녕하세요. 웹디자인을 좋아하는 프론트엔드 개발자 류혜리입니다. 반응형 웹/앱을 만들고 있습니다.
+                            사람들과 어울리며 새로운 도전을 하는 것을 좋아합니다. 풀스택 개발자가 되기 위해 노력하고 있습니다.사람들과 어울리며 새로운 도전을 하는 것을 좋아합니다. 풀스택 개발자가 되기 위해 공부 중입니다.</p>
+                        <p><a href="#" class="testimonial__bubble__name">James Kim</a> /Kakao</p>
                     </div>
                 </>
             </ul>
@@ -294,8 +307,8 @@
     </main>
     <!-- FOOTER -->
     <footer>
-        <h2>Let's talk</h2>
-        <p>hyeri1126@ewhain.net</p>
+        <h2 class="title">Let's talk</h2>
+        <p class="description">hyeri1126@ewhain.net</p>
         <ul>
             <li>
                 <a href="#" target="_blank" title="my gihub link">
